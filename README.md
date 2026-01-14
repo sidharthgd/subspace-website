@@ -1,48 +1,39 @@
 # Subspace Website
 
-A modern, clean landing page for Subspace - a research data management platform.
+A clean, minimal landing page for Subspace — an agentic analysis platform for research labs.
 
-## Getting Started
+## Files
 
-First, install the dependencies:
+- `index.html` — Homepage
+- `about.html` — About page
+- `what-we-do.html` — What We Do page
+- `contact.html` — Contact page
+- `styles.css` — All styling and animations
+- `script.js` — Minimal JavaScript for forms and interactions
+- `subspace-logo.png` — Logo
+- `CNAME` — Custom domain for GitHub Pages
 
-```bash
-npm install
-```
+## Deployment
 
-Then, run the development server:
+Just push to GitHub Pages — no build step required.
 
-```bash
-npm run dev
-```
+1. Create a GitHub repository
+2. Push all files to the `main` branch
+3. Go to Settings → Pages → Deploy from `main` branch
+4. Your site will be live at `supspace-app.com`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Local Preview
 
-## Project Structure
-
-- `app/` - Next.js app directory with pages and layouts
-- `components/` - React components for each section of the landing page
-- `app/globals.css` - Global styles with Tailwind CSS
-
-## Sections
-
-1. **Hero** - Above the fold with value proposition and CTAs
-2. **Problem** - Why it matters section with pain points
-3. **Capabilities** - What Subspace does with capability cards
-4. **How It Works** - Simple 3-step process (Ingest → Understand → Act)
-5. **Who It's For** - Target audience
-6. **Footer** - Contact information and social links
-
-## Tech Stack
-
-- Next.js 14 (App Router)
-- React 18
-- TypeScript
-- Tailwind CSS
-
-## Build for Production
+Open `index.html` in your browser, or use a local server:
 
 ```bash
-npm run build
-npm start
+python3 -m http.server 8000
 ```
+
+Then visit http://localhost:8000
+
+## Customization
+
+- **Colors**: Edit CSS variables at the top of `styles.css`
+- **Content**: Edit the HTML files directly
+- **Form handling**: Update the `handleFormSubmit` function in `script.js` to connect to your backend
